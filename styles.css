@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(5, 7, 77);
+  color: #0c8737;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  margin: 30px;
+  font-size: 3rem;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+#fieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 300px;
+  border: 5px solid #0c8737;
+  border-radius: 15px;
+}
+#fieldset legend {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+#fieldset .height-input-container,
+#fieldset .height-output-container,
+#fieldset .distance-input-container,
+#fieldset .distance-output-container,
+#fieldset .temperature-input-container,
+#fieldset .temperature-output-container,
+#fieldset .weight-input-container,
+#fieldset .weight-output-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+#fieldset .height-input-container .height-unit-select,
+#fieldset .distance-input-container .distance-unit-select,
+#fieldset .temperature-input-container .temperature-unit-select,
+#fieldset .weight-input-container .weight-unit-select {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  margin: 10px;
+}
+#fieldset .height-output-container .height-to-convert-select,
+#fieldset .distance-output-container .distance-to-convert-select,
+#fieldset .temperature-output-container .temperature-to-convert-select,
+#fieldset .weight-output-container .weight-to-convert-select {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+#fieldset .height-output-container .result,
+#fieldset .distance-output-container .result,
+#fieldset .temperature-output-container .result,
+#fieldset .weight-output-container .result {
+  min-height: 40px;
+  min-width: 160px;
+  background-color: #fff;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#fieldset .height-input-container .height-input,
+#fieldset .distance-input-container .distance-input,
+#fieldset .temperature-input-container .temperature-input,
+#fieldset .weight-input-container .weight-input {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.convert-btn {
+  padding: 20px;
+  max-width: 90px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #ce1010;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.convert-btn:hover {
+  border: 2px solid white;
+}

@@ -5,108 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Unit Converter</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="title">
       <h1>Unit Converter</h1>
     </div>
-    <section class="heights-section">
-      <fieldset>
-        <legend>Heights</legend>
-        <div class="height-input-container">
-          <select class="height-unit-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-          <label for="height-unit-input"
-            ><input type="number" min="0" class="height-input"
-          /></label>
-        </div>
-        <div class="height-output-container">
-          <select class="height-to-convert-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </div>
-        <button type="button" class="convert-height-btn"></button>
-      </fieldset>
-    </section>
+    <div class="top-container">
+      <section class="heights-section">
+        <fieldset id="fieldset">
+          <legend>Height</legend>
+          <div class="height-input-container">
+            <select class="height-unit-select">
+              <option value="from">From</option>
+              <option value="centimeters">Centimeters</option>
+              <option value="feet">Feet</option>
+              <option value="meters">Meters</option>
+            </select>
+            <label for="height-unit-input"
+              ><input
+                type="number"
+                min="0"
+                class="height-input"
+                placeholder="Input"
+            /></label>
+          </div>
+          <div class="height-output-container">
+            <select class="height-to-convert-select">
+              <option value="">To</option>
+              <option value="centimeter">Centimeters</option>
+              <option value="feet">Feet</option>
+              <option value="meters">Meters</option>
+            </select>
+            <div class="result"></div>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="convert-btn convert-height-btn">
+              Convert
+            </button>
+          </div>
+        </fieldset>
+      </section>
 
-    <section class="weights-section">
-      <fieldset>
-        <legend>Weights</legend>
-        <div class="weight-input-container">
-          <select class="weight-unit-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-          <label for="weight-unit-input"
-            ><input type="number" min="0" class="height-input"
-          /></label>
-        </div>
-        <div class="weight-output-container">
-          <select class="weight-to-convert-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </div>
-        <button type="button" class="convert-weight-btn"></button>
-      </fieldset>
-    </section>
+      <section class="weights-section">
+        <fieldset id="fieldset">
+          <legend>Weight</legend>
+          <div class="weight-input-container">
+            <select class="weight-unit-select">
+              <option value="">From</option>
+              <option value="kilograms">Kilograms</option>
+              <option value="stone">Stone</option>
+              <option value="tonnes">Tonnes</option>
+              <option value="grams">Grams</option>
+              <option value="pounds">Pounds</option>
+            </select>
+            <label for="weight-unit-input"
+              ><input
+                type="number"
+                min="0"
+                class="weight-input"
+                placeholder="Input"
+            /></label>
+          </div>
+          <div class="weight-output-container">
+            <select class="weight-to-convert-select">
+              <option value="">To</option>
+              <option value="kilograms">Kilograms</option>
+              <option value="stone">Stone</option>
+              <option value="tonnes">Tonnes</option>
+              <option value="grams">Grams</option>
+              <option value="pounds">Pounds</option>
+            </select>
+            <div class="result"></div>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="convert-btn convert-weight-btn">
+              Convert
+            </button>
+          </div>
+        </fieldset>
+      </section>
+    </div>
 
-    <section class="temperatures-section">
-      <fieldset>
-        <legend>Temperatures</legend>
-        <div class="temperature-input-container">
-          <select class="temperature-unit-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-          <label for="temperature-unit-input"
-            ><input type="number" min="0" class="height-input"
-          /></label>
-        </div>
-        <div class="temperature-output-container">
-          <select class="temperature-to-convert-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </div>
-        <button type="button" class="convert-temperature-btn"></button>
-      </fieldset>
-    </section>
+    <div class="bottom-container">
+      <section class="temperatures-section">
+        <fieldset id="fieldset">
+          <legend>Temperature</legend>
+          <div class="temperature-input-container">
+            <select class="temperature-unit-select">
+              <option value="">From</option>
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+            <label for="temperature-unit-input"
+              ><input
+                type="number"
+                class="temperature-input"
+                placeholder="Input"
+            /></label>
+          </div>
+          <div class="temperature-output-container">
+            <select class="temperature-to-convert-select">
+              <option value="">To</option>
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+            <div class="result"></div>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="convert-btn convert-temperature-btn">
+              Convert
+            </button>
+          </div>
+        </fieldset>
+      </section>
 
-    <section class="distances-section">
-      <fieldset>
-        <legend>Distances</legend>
-        <div class="distance-input-container">
-          <select class="distance-unit-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-          <label for="distance-unit-input"
-            ><input type="number" min="0" class="distance-input"
-          /></label>
-        </div>
-        <div class="distance-output-container">
-          <select class="distance-to-convert-select">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </div>
-        <button type="button" class="convert-distance-btn"></button>
-      </fieldset>
-    </section>
-
-    <script src="index.js"></script>
+      <section class="distances-section">
+        <fieldset id="fieldset">
+          <legend>Distance</legend>
+          <div class="distance-input-container">
+            <select class="distance-unit-select">
+              <option value="">From</option>
+              <option value="kilometer">Kilometers</option>
+              <option value="miles">Miles</option>
+              <option value="nautical-miles">Nautical-miles</option>
+              <option value="light-years">Light-years</option>
+            </select>
+            <label for="distance-unit-input"
+              ><input
+                type="number"
+                min="0"
+                class="distance-input"
+                placeholder="Input"
+            /></label>
+          </div>
+          <div class="distance-output-container">
+            <select class="distance-to-convert-select">
+              <option value="">To</option>
+              <option value="kilometer">Kilometers</option>
+              <option value="miles">Miles</option>
+              <option value="nautical-miles">Nautical-miles</option>
+              <option value="light-years">Light-years</option>
+            </select>
+            <div class="result"></div>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="convert-btn convert-distance-btn">
+              Convert
+            </button>
+          </div>
+        </fieldset>
+      </section>
+    </div>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
