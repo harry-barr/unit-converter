@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Unit Converter</h1>
+    </div>
+    <section class="heights-section">
+      <fieldset>
+        <legend>Heights</legend>
+        <div class="height-input-container">
+          <select class="height-unit-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <label for="height-unit-input"
+            ><input type="number" min="0" class="height-input"
+          /></label>
+        </div>
+        <div class="height-output-container">
+          <select class="height-to-convert-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <button type="button" class="convert-height-btn"></button>
+      </fieldset>
+    </section>
+
+    <section class="weights-section">
+      <fieldset>
+        <legend>Weights</legend>
+        <div class="weight-input-container">
+          <select class="weight-unit-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <label for="weight-unit-input"
+            ><input type="number" min="0" class="height-input"
+          /></label>
+        </div>
+        <div class="weight-output-container">
+          <select class="weight-to-convert-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <button type="button" class="convert-weight-btn"></button>
+      </fieldset>
+    </section>
+
+    <section class="temperatures-section">
+      <fieldset>
+        <legend>Temperatures</legend>
+        <div class="temperature-input-container">
+          <select class="temperature-unit-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <label for="temperature-unit-input"
+            ><input type="number" min="0" class="height-input"
+          /></label>
+        </div>
+        <div class="temperature-output-container">
+          <select class="temperature-to-convert-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <button type="button" class="convert-temperature-btn"></button>
+      </fieldset>
+    </section>
+
+    <section class="distances-section">
+      <fieldset>
+        <legend>Distances</legend>
+        <div class="distance-input-container">
+          <select class="distance-unit-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <label for="distance-unit-input"
+            ><input type="number" min="0" class="distance-input"
+          /></label>
+        </div>
+        <div class="distance-output-container">
+          <select class="distance-to-convert-select">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <button type="button" class="convert-distance-btn"></button>
+      </fieldset>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
