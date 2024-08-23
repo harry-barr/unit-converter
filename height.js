@@ -5,7 +5,7 @@ const heightSelect = document.querySelector(".height-unit");
 const heightInput = document.querySelector(".height-input");
 const heightToConvertTo = document.querySelector(".height-to-convert");
 const heightConvertBtn = document.querySelector(".convert-height-btn");
-const result = document.querySelector(".result");
+const result = document.querySelector(".result-height");
 
 /* 
     FORMULAE
@@ -53,35 +53,30 @@ heightConvertBtn.addEventListener("click", () => {
   ) {
     result.innerHTML = "";
     feetToCm();
-    return;
   } else if (
     heightSelect.value === "meters" &&
     heightToConvertTo.value === "centimeters"
   ) {
     result.innerHTML = "";
     metersToCm();
-    return;
   } else if (
     heightSelect.value === "centimeters" &&
     heightToConvertTo.value === "meters"
   ) {
     result.innerHTML = "";
     cmToMeters();
-    return;
   } else if (
     heightSelect.value === "feet" &&
     heightToConvertTo.value === "meters"
   ) {
     result.innerHTML = "";
     feetToMeters();
-    return;
   } else if (
     heightSelect.value === "meters" &&
     heightToConvertTo.value === "feet"
   ) {
     result.innerHTML = "";
     metersToFeet();
-    return;
   } else if (heightSelect.value === "" || heightToConvertTo.value === "") {
     return alert("Please select a unit!");
   }

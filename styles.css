@@ -19,12 +19,14 @@
 
 .top-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   margin: 50px;
 }
 .bottom-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   margin: 50px;
@@ -81,10 +83,10 @@
   color: black;
 }
 
-#fieldset .height-output-container .result,
-#fieldset .distance-output-container .result,
-#fieldset .temperature-output-container .result,
-#fieldset .weight-output-container .result {
+#fieldset .height-output-container .result-height,
+#fieldset .distance-output-container .result-distance,
+#fieldset .temperature-output-container .result-temperature,
+#fieldset .weight-output-container .result-weight {
   display: flex;
   justify-content: center;
   align-items: center;
