@@ -31,7 +31,7 @@ const milesToKilometers = () => {
   return (distanceResult.innerHTML = `${kilometers1.toFixed(2)} km`);
 };
 const milesToNauticalM = () => {
-  let nauticalM2 = Number(distanceInput.value) * (115 / 100);
+  let nauticalM2 = Number(distanceInput.value) * (86 / 100);
   return (distanceResult.innerHTML = `${nauticalM2.toFixed(2)} nm`);
 };
 const nauticalMilesToKilometers = () => {

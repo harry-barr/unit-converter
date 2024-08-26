@@ -29,7 +29,7 @@ const tonnesToKg = () => {
 };
 const kgToGrams = () => {
   let grams1 = Number(weightInput.value) * 1000;
-  return (weightResult.innerHTML = `${grams1.toFixed(2)} tonnes`);
+  return (weightResult.innerHTML = `${grams1.toFixed()} g`);
 };
 const gramsToKg = () => {
   let kg3 = Number(weightInput.value) * 1000;
@@ -57,7 +57,7 @@ const tonnesToStone = () => {
 };
 const stoneToGrams = () => {
   let grams2 = Number(weightInput.value) * 6350.29;
-  return (weightResult.innerHTML = `${grams2.toFixed(2)} g`);
+  return (weightResult.innerHTML = `${grams2.toFixed()} g`);
 };
 const gramsToStone = () => {
   let stone3 = Number(weightInput.value) / 6350.29;
@@ -78,7 +78,7 @@ const poundsToStone = () => {
 
 const tonnesToGrams = () => {
   let grams3 = Number(weightInput.value) * 1000000;
-  return (weightResult.innerHTML = `${grams3.toFixed(2)} g`);
+  return (weightResult.innerHTML = `${grams3.toFixed()} g`);
 };
 const gramsToTonnes = () => {
   let tonnes3 = Number(weightInput.value) / 1000000;
@@ -103,7 +103,7 @@ const gramsToPounds = () => {
 };
 const poundsToGrams = () => {
   let grams4 = Number(weightInput.value) * 453.6;
-  return (weightResult.innerHTML = `${grams4.toFixed(2)} g`);
+  return (weightResult.innerHTML = `${grams4.toFixed()} g`);
 };
 
 /* 
